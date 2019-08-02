@@ -7,19 +7,13 @@ body {
 		display: none;
 	}
 
-/* App */
-	#app-container {
-		padding-top: 70px;
-		padding-bottom: 70px;
-	}
-
 /* Navigation Bar */
 	#app-nav {
 		background-color: #2b384a;
-		position: fixed;
+		position: relative;
 		top: 0;
 		width: 100%;
-		padding: 6px 0px 0px 10px;
+		padding: 6px 0px 0px 20px;
 		color: white;
 		z-index: 99;
 	}
