@@ -1,0 +1,69 @@
+body {
+	background-color: #ebeff2;
+}
+
+/* Vue.js */
+	[v-cloak] {
+		display: none;
+	}
+
+/* App */
+	#app-container {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+
+/* Navigation Bar */
+	#app-nav {
+		background-color: #2b384a;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		padding: 6px 0px 0px 10px;
+		color: white;
+		z-index: 99;
+	}
+	#nav-text {
+		margin-top: 7px;
+		font-size: 18px;
+	}
+	#nav-paths {
+		justify-content: flex-end;
+	}
+	.nav-path {
+		min-width: 55px;
+		padding: 2px 6px;
+		margin: 0 2px;
+		border-radius: 5px 5px 0 0;
+		text-align: center;
+		cursor: pointer;
+		user-select: none;
+		transition: all .1s;
+	}
+	.nav-path:hover {
+		background-color: #2b4465;
+	}
+	.nav-path-selected, .nav-path-selected:hover {
+		background-color: #414f61;
+	}
+	.nav-path-icon svg {
+		height: 20px;
+		width: 20px;
+	}
+	.nav-path-text {
+		font-size: 12px;
+	}
+	@media only screen and (min-width: 0px) and (max-width: 575px) {
+		#nav-text {
+			width: 100%;
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		#nav-paths {
+			justify-content: center;
+		}
+		.nav-path {
+			border-radius: 5px;
+			margin: 4px;
+		}
+	}
