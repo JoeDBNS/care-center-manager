@@ -1,5 +1,5 @@
-# child-informaiton-manager
-Software for daycares.
+# care-center-manager
+Software for care centers.
 
 <br><br>
 
