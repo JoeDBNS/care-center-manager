@@ -29,7 +29,8 @@ Project: care-center-manager
 <body>
 	<div id="app-container" class="container-fluid p-0">
 		<nav id="app-nav" class="row m-0">
-			<div id="nav-text" class="text-sm-left text-center">Care Center Manager</div>
+			<div class="nav-text text-sm-left text-center" v-show="page === 'index'">Care Center Manager</div>
+			<div v-cloak class="nav-text text-sm-left text-center" v-show="page !== 'index'">{{page}}</div>
 
 			<div class="col p-0">
 				<div class="container-fluid">
