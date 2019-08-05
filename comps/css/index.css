@@ -36,12 +36,15 @@ body {
 		margin: 0 4px;
 		border-radius: 5px 5px 0 0;
 		text-align: center;
+		color: white;
+		text-decoration: none;
 		cursor: pointer;
 		user-select: none;
 		transition: all .1s;
 	}
 	.nav-path:hover {
 		background-color: #2b4465;
+		color: white;
 	}
 	.nav-path-selected, .nav-path-selected:hover {
 		background-color: #414f61;
