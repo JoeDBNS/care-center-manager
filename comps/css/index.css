@@ -122,3 +122,6 @@ body {
 		color: #2b384a;
 		font-size: 16px;
 	}
+	.notification-subject-target {
+		font-weight: bold;
+	}
