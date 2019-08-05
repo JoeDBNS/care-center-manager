@@ -21,6 +21,10 @@ Project: care-center-manager
 
 	<!-- Bootstrap v4.3.1 -->
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	
+	<!-- Chart.js -->
+	<link rel="stylesheet" href="./css/chart.min.css">
+    <script src="./js/chart.bundle.min.js"></script>
 
 	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="./css/index.css">
@@ -69,7 +73,7 @@ Project: care-center-manager
 				<small>Loading...</small>
 			</div>
 
-			<div id="app-page-index" class="container-fluid p-0" v-show="page === 'index'">
+			<div v-cloak id="app-page-index" class="container-fluid p-0" v-show="page === 'index'">
 				<div class="row">
 					<div id="app-notif" class="col-lg-6 col-12">
 						<div class="app-notif-title">Notifications</div>
@@ -98,19 +102,21 @@ Project: care-center-manager
 				</div>
 			</div>
 
-			<div id="app-page-schedule" class="container-fluid p-0" v-show="page === 'schedule'">
+			<div v-cloak id="app-page-schedule" class="container-fluid p-0" v-show="page === 'schedule'">
 				Schedule
 			</div>
 
-			<div id="app-page-expenses" class="container-fluid p-0" v-show="page === 'expenses'">
-				Expenses
+			<div v-cloak id="app-page-expenses" class="container-fluid p-0" v-show="page === 'expenses'">
+				<div id="expenses-chart-container">
+					<canvas id="expenses-chart-content"></canvas>
+				</div>
 			</div>
 
-			<div id="app-page-employees" class="container-fluid p-0" v-show="page === 'employees'">
+			<div v-cloak id="app-page-employees" class="container-fluid p-0" v-show="page === 'employees'">
 				Employees
 			</div>
 
-			<div id="app-page-children" class="container-fluid p-0" v-show="page === 'children'">
+			<div v-cloak id="app-page-children" class="container-fluid p-0" v-show="page === 'children'">
 				Children
 			</div>
 		</main>
