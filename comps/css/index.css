@@ -165,3 +165,63 @@ body {
 				border: 1px solid #2b384a;
 			}
 		}
+
+/* Employees */
+	/* Cards */
+		.employee {
+			padding: 8px;
+		}
+		.employee-card {
+			background-color: white;
+			padding: 8px;
+			border: 1px solid #cacaca;
+			border-radius: 7px;
+			/* border-radius: 100px 12px 12px 100px; */
+			/* border-radius: 100px; */
+			box-shadow: 0 0 2px #6cb1c8;
+			cursor: pointer;
+			transition: all .075s;
+		}
+		.employee-card:hover {
+			/* transform: scale(1.025); */
+			/* box-shadow: 0 0 2px 2px #5c94a7; */
+			/* box-shadow:
+				-2px -2px 2px 2px red,
+				0 0 2px 2px orangered,
+				2px 2px 2px 2px orange
+			; */
+			box-shadow:
+				-2px -2px 1px 1px #2B384A,
+				0 -2px 1px 1px #4f8090,
+				-2px 0 1px 1px #4f8090,
+				0 2px 1px 1px #4f8090,
+				2px 0 1px 1px #4f8090,
+				2px 2px 1px 1px #5c94a7
+			;
+		}
+		.employee-card-picture {
+			padding: 0;
+			user-select: none;
+		}
+		.employee-card-picture img {
+			height: 84px;
+			width: 84px;
+			border: 1px solid #bdbdbd;
+			border-radius: 7px;
+			/* border-radius: 100px; */
+			box-shadow: 0 0 2px #efefef;
+		}
+		.employee-card-details {
+			padding: 7px 38px 7px 15px;
+			min-width: 140px;
+		}
+		.employee-card-details-name {
+			font-size: 18px;
+			font-weight: bold;
+		}
+		.employee-card-details-position {
+			font-size: 14px;
+		}
+		.employee-card-details-room {
+			font-size: 14px;
+		}

@@ -19,6 +19,60 @@ var MainVue = new Vue({
 				school_age: 3,
 				other: 8
 			}
+		},
+		employees: {
+			filterBy: [],
+			listAll: [
+				{
+					first_name: 'Joe',
+					last_name: 'Davis',
+					position: 'Developer',
+					room: 'administration',
+					picture: './assets/images/employee_stock_photos/7.jpg'
+				},
+				{
+					first_name: 'Elyse',
+					last_name: 'Willems',
+					position: 'Director',
+					room: 'administration',
+					picture: './assets/images/employee_stock_photos/3.jpg'
+				},
+				{
+					first_name: 'Richard',
+					last_name: 'LaFleur',
+					position: 'Accountant',
+					room: 'administration',
+					picture: './assets/images/employee_stock_photos/1.jpg'
+				},
+				{
+					first_name: 'Deandra',
+					last_name: 'Reynolds',
+					position: 'Assistant Teacher',
+					room: 'preschool',
+					picture: './assets/images/employee_stock_photos/6.jpg'
+				},
+				{
+					first_name: 'Bruce',
+					last_name: 'Green',
+					position: 'Teacher\'s Assistant',
+					room: 'preschool',
+					picture: './assets/images/employee_stock_photos/5.png'
+				},
+				{
+					first_name: 'Charley',
+					last_name: 'Day',
+					position: 'Lead Teacher',
+					room: 'infant',
+					picture: './assets/images/employee_stock_photos/4.jpg'
+				},
+				{
+					first_name: 'Lily',
+					last_name: 'Davis',
+					position: 'Student Intern',
+					room: 'infant',
+					picture: './assets/images/employee_stock_photos/2.jpg'
+				}
+			]
 		}
 	},
 	methods: {

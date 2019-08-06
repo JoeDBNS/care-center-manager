@@ -113,7 +113,40 @@ Project: care-center-manager
 			</div>
 
 			<div v-cloak id="app-page-employees" class="container-fluid p-0" v-show="page === 'employees'">
-				Employees
+				<div class="row mb-5">
+					<label for="testInputAdministration" class="col-2">
+						<input id="testInputAdministration" type="checkbox" value="administration" v-model="employees.filterBy">
+						Administration
+					</label>
+					<br>
+					<label for="testInputPreschool" class="col-2">
+						<input id="testInputPreschool" type="checkbox" value="preschool" v-model="employees.filterBy">
+						Preschool
+					</label>
+					<br>
+					<label for="testInputInfant" class="col-2">
+						<input id="testInputInfant" type="checkbox" value="infant" v-model="employees.filterBy">
+						Infant
+					</label>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="employee" v-for="emp in employees.listAll" v-show="employees.filterBy.length === 0 || employees.filterBy.includes(emp.room)">
+						<div class="employee-card container">
+							<div class="row m-0">
+								<div class="employee-card-picture">
+									<img v-bind:src="emp.picture" v-bind:alt="'Picture of ' + emp.first_name + ' ' + emp.last_name">
+								</div>
+								<div class="employee-card-details">
+									<div class="employee-card-details-name">{{emp.first_name}} {{emp.last_name}}</div>
+									<div class="employee-card-details-position">{{emp.position}}</div>
+									<div class="employee-card-details-room">{{emp.room}}</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 
 			<div v-cloak id="app-page-children" class="container-fluid p-0" v-show="page === 'children'">
