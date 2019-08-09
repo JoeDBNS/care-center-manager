@@ -1,6 +1,8 @@
 # care-center-manager
 Software for care centers.
 
+[joedbns.github.io/care-center-manager/comps](https://joedbns.github.io/care-center-manager/comps)
+
 <br><br>
 
 ### For **scheduler** functionality:
